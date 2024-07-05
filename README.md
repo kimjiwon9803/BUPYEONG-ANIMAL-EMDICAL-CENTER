@@ -4,13 +4,12 @@
 ##### ● 프로젝트명: BUPYEONG-ANIMAL-EMDICAL-CENTER (부평종합동물의료센터)
 ##### ● 프로젝트 기간: 2024.06.26~ 2024.07.05
 ##### ● 팀원: 개인작업
-##### ● 기획의도: 아뜰리에는 아뜰리에는 건강한 미술 생태계를 꿈꾸고 있습니다. <br/> 소수에게 주어진 기회로 역량 있는 작가의 활동기회가 박탈되지 않기 위한 방안이 무엇인지 고민하고, <br/> 대중과 미술이 보다 쉽게 소통할 수 있는 환경을 조성합니다.
-##### ● PPT링크:  https://github.com/user-attachments/files/16104008/_20231220.1.pdf
+##### ● 기획의도: 
 ##### ● 배포링크: 
 
 
 ## 기술스택
-
+#### HTML
 
 ## 페이지
 |메인페이지|로그인|회원가입|
@@ -19,16 +18,3 @@
 |**작가프로필**|**판매작품등록**|**판매작품내역**|
 |<img src="https://github.com/siwool123/atelier/assets/138649745/60a33d4b-ac15-4d5c-ad5b-7d17048cbc51" width="300" height="400"/>|<img src="https://github.com/siwool123/atelier/assets/138649745/0a5bab8f-4506-4959-8650-7f3f95bb2b02" width="300" height="400"/>|<img src="https://github.com/siwool123/atelier/assets/138649745/1dd4bcc6-166b-4453-9c01-785244b33a2a" width="300" height="400"/>
 
-
-## ERD
-<details>
-  <summary>ERD</summary>
-  <img src="https://github.com/siwool123/atelier/assets/138649745/7baf8da8-c90d-465d-8c4a-b4efc7831eb1"/>
-</details>
-
-## Usecase Diagram
-<details>
-  <summary>ERD</summary>
-  <img src="https://github.com/siwool123/atelier/assets/138649745/7fc54ba2-0933-49df-b2f7-8fabdb463c69"/>
-  <img src= "https://github.com/siwool123/atelier/assets/138649745/5d63eb48-c2e3-4e10-9626-1f969577be77"/>
-</details>
