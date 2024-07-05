@@ -1,7 +1,7 @@
 ## BUPYEONG-ANIMAL-EMDICAL-CENTER
 ## 프로젝트소개
 #### <p align="center"><img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/9b663c85-27c4-488a-9b8c-98b96c4d67ff">
-##### ● 프로젝트명: BUPYEONG-ANIMAL-EMDICAL-CENTER(부평종합동물의료센터)
+##### ● 프로젝트명: BUPYEONG-ANIMAL-EMDICAL-CENTER (부평종합동물의료센터)
 ##### ● 프로젝트 기간: 2024.06.26~ 2024.07.05
 ##### ● 팀원: 개인작업
 ##### ● 기획의도: 아뜰리에는 아뜰리에는 건강한 미술 생태계를 꿈꾸고 있습니다. <br/> 소수에게 주어진 기회로 역량 있는 작가의 활동기회가 박탈되지 않기 위한 방안이 무엇인지 고민하고, <br/> 대중과 미술이 보다 쉽게 소통할 수 있는 환경을 조성합니다.
