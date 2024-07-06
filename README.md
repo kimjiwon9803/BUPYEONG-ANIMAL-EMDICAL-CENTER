@@ -9,7 +9,12 @@
 
 
 ## 기술스택
-#### HTML
+#### Environment
+<img src="https://github.com/siwool123/atelier/assets/138649745/d4fc571f-c7ab-4d0c-9538-6b61ffecf100"/>
+#### Development
+
+
+
 
 ## 페이지
 |메인페이지|로그인|회원가입|
