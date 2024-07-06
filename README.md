@@ -6,11 +6,9 @@
 ##### ● 팀원: 개인작업
 ##### ● 기획의도: 
 ##### ● 배포링크: 
-
-
 ## 기술스택
-#### Environment
-<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/99793ce8-92e8-44bb-b9b9-87135bf8d96b"/> <br/>
+#### Environment<br/>
+<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/0cb063fb-19a6-4080-9711-bb037b44efd7"/> <br/>
 #### Development 
 <img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/1ec32aa3-f16d-4ad8-99cb-71fb6c5d902c"/>
 
