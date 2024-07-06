@@ -12,11 +12,6 @@
 #### Environment
 <img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/99793ce8-92e8-44bb-b9b9-87135bf8d96b"/> <br/>
 #### Development
-<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/3b51580b-8e50-4bbe-a3f4-4daaf35c6c58"/>
-<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/d45b8232-b7fc-4829-b520-0cddce9a7453"/>
-<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/f98ce45e-1ac2-4131-80f9-e9c95f9dc73d"/>
-
-
 
 
 ## 페이지
