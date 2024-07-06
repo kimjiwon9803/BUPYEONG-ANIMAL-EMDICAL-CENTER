@@ -8,7 +8,7 @@
 ##### ● 배포링크: 
 ## 기술스택
 #### Environment<br/>
-<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/0cb063fb-19a6-4080-9711-bb037b44efd7"/> <br/>
+<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/390f800d-83bf-41ff-ab03-600478abc248"/> <br/>
 #### Development 
 <img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/1ec32aa3-f16d-4ad8-99cb-71fb6c5d902c"/>
 
