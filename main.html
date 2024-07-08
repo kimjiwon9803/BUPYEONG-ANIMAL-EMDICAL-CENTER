@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-menu</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+// 슬라이드를 버튼으로 움직일 수 있습니다.
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    
+// 현재 페이지를 나타내는 점이 생깁니다. 클릭하면 이동합니다.
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+// 현재 페이지를 나타내는 스크롤이 생깁니다. 클릭하면 이동합니다.
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+    
+// 3초마다 자동으로 슬라이드가 넘어갑니다. 1초 = 1000
+  autoplay: {
+    delay: 3000,
+  },
+});
+</script>
+<!-- jquery -->
+<script>
+  $(document).ready(function(){
+    $('.location')
+    .bind("mouseover",function(){
+        document.getElementsByID("location")
+        .style.backgroundcolor="yellow"
+    })
+  })
+</script>
+<!-- number -->
+ <script>
+// 숫자카운트
+const counter = (counterElement, max) => {
+    let now = max;
+
+    const handle = setInterval(() => {
+        counterElement.innerHTML = Math.ceil(max - now).toLocaleString();
+
+        if (now < 1) {
+            clearInterval(handle);
+        }
+
+        const step = now / 10;
+        now -= step;
+    }, 50);
+};
+// 스크롤 이벤트
+const startCountersOnScroll = () => {
+    const numSec = document.querySelector('.num-sec');
+    const numSecOffsetTop = numSec.offsetTop;
+    let started = false;
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY >= numSecOffsetTop && !started) {
+            const counters = document.querySelectorAll('.count');
+            const maxValues = [48965, 541223, 23,4,15];
+            counters.forEach((counterElement, index) => {
+                setTimeout(() => counter(counterElement, maxValues[index]), 0);
+            });
+            started = true;
+            window.removeEventListener('scroll', handleScroll);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+};
+
+window.addEventListener('load', startCountersOnScroll);
+ </script>
+<body>
+  <div class="AllWrap">
+    <header id="header">
+        <ul class="nav">
+          <div id="logo">
+            <img src="./imge/logo.png">
+        </div>  
+            <div class="menu">
+                <!-- 메뉴 -->
+                    <ul>
+                        <li class="Topmunu">
+                          <p>병원소개&nbsp;</p>
+                            <ul class="subMenu">
+                                <li id="staff">의료진</li>
+                                <li id="medical_equipment">의료장비</li>
+                                <li id="organizational">조직안내</li>
+                                <li id="browse">병원둘러보기</li>
+                                <li id="road">찾아오시는길</li>
+                            </ul>
+                        </li>
+                        <li class="Topmunu">
+                          <p>특화센터&nbsp;</p>
+                            <ul class="subMenu">
+                                <li id="Cardiovascular_Center">심장신장순환기센터</li>
+                                <li id="dentist_center">치과센터</li>
+                                <li id="Oncology_Center">종양항암센터</li>
+                            </ul>
+                        </li>
+                        <li class="Topmunu">
+                          <p>응급의료센터&nbsp;</p>
+                        </li>
+                        <li class="Topmunu">
+                          <p>고양이진료센터&nbsp;</p>
+                          <ul class="subMenu">
+                              <li id="cat_center">고양이진료센터</li>
+                          </ul>
+                        </li>
+                        <li class="Topmunu">
+                          <p>치료케이스&nbsp;</p>
+                      </li>
+                      <li class="Topmunu">
+                        <p>커뮤니티&nbsp;</p>
+                        <ul class="subMenu">
+                            <li id="announcement">공지사항</li>
+                            <li id="insta">인스타그램</li>
+                        </ul>
+                    </li>                                        
+                    </ul>
+            </div>
+        </ul>
+    <section>
+      <!-- 퀵메뉴 -->
+      <div id="quick">
+        <ul class="quick_menu">
+            <li id="cellphone"><img src="./QuickMenu/cellphone.png"></li>
+            <li id="message"><img src="./QuickMenu/message.png"></li>
+            <li id="instagram"><img src="./QuickMenu/instagram.png"></li>
+            <li id="blog"><img src="./QuickMenu/blog.png"></li>
+        </ul>
+    </div>
+    </section>
+    </header>
+    <section>
+      <!-- 동물병원 홍보 영상 -->
+      <div class="introduce">
+        <div id="video">
+          <video src="./video/더케어 동물의료센터를 소개합니다~.mp4" type="video/mp4" autoplay preload="auto"></video>
+        </div>
+          <div class="care">
+                <div id="bg">
+                  <img src="./imge/건강 케어.png">
+                </div>
+                <div id="introduce">
+                  <p id="care">
+                    반려동물 건강 케어는<br>
+                  <span id="hospital">부평종합동물의료센터</span>
+                  </p>
+          <section class="num-sec">
+              <div class="txt">
+                  <div class="txt-box year">
+                      <div class="count-box">
+                          <span class="count">0</span>
+                          <span id="number">명</span>
+                      </div>
+                      <hr>
+                      <p id="customer">내원고객수</p>        
+                  </div>
+                  <div class="txt-box store">
+                      <div class="count-box">
+                          <span class="count">0</span>
+                          <span id="number">마리</span>
+                      </div>
+                      <hr/>
+                      <p id="cure">치료받은 반려동물 수</p>
+                  </div>
+                  <div class="txt-box app">
+                      <div class="count-box">
+                          <span class="count">0</span>
+                          <span id="number">년</span>
+                          <span class="count">0</span>
+                          <span id="number">개월</span>
+                          <span class="count">0</span>
+                          <span id="number">일</span>
+                      </div>
+                      <hr/>
+                      <p id="period">치료기간</p>
+                  </div>
+              </div>
+              </div>
+    </section>
+    <!-- 특화진료센터 -->
+    <article id="article">
+      <div class="specialisation">
+        <p id="H24">BUPYEONG ANIMAL EMDICAL CENTER 24H</p>
+        <p id="center">부평 종합 동물 의료센터
+          <br/> <span id="specialisation">특화진료</span>
+        </p>
+        <p id="equipment">첨단 의료장비와 분야별 전공의가 <br>
+           반려동물에게 최적의 치료를 제공합니다.    
+        </p>
+        <div class="center">
+          <div class="heart">
+            <img src="./imge/센터/심장순환기센터.png">
+          <p id="heart">심장순환기센터</p>
+          </div>
+          <div class="dentist">
+            <img src="./imge/센터/치과센터.jpg">
+          <p id="dentist">치과센터</p>
+          </div>
+          <div class="tumor">
+            <img src="./imge/센터/종양항암센터.jpg">
+          <p id="tumor">종양항암센터</p>
+          </div>
+          </div>
+          <div class="bone">
+            <img src="./imge/센터/종양항암센터.jpg">
+          <p id="bone">슬개골탈골센터</p>
+          </div>
+          <div class="emergency">
+            <img src="./imge/센터/응급의료센터.png">
+          <p id="emergency">응급의료센터</p>
+          </div>
+          <div class="cat">
+            <img src="./imge/센터/고양이진료센터.png">
+          <p id="emergency">고양이진료센터</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 병원의료진 -->
+    <section>
+      <div class="doctor">
+        <p id="doctor">BP ANIMAL DOCTORS</p>
+        <p id="medical">의료진 소개 <br/></p>
+        <p id="prepare">
+          소중한 반려동물의 행복과 건강을 위해 <br/>
+          365일 24시간 항상 준비되어있습니다.
+        </p>
+      <!-- 병원의료진 소개 -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./imge/의사/고상원 부원장.png">
+              <p id="name">고상원 부원장</p>
+              <p id="field">주요 진료분야: 심장내과, 호르몬내분비내과, 
+              </br>뇌신경내과</p>
+            </div>
+            <div class="swiper-slide"><img src="./imge/의사/과이정선 내과과장.png">
+              <p id="name">이정선 내과과장</p>
+              <p id="field">주요 진료분야: 중증내과질환, 심장내과</p>
+            </div>
+            <div class="swiper-slide"><img src="./imge/의사/과조재금 내과원장.png">
+              <p id="name">조재금 내과원장</p>
+              <p id="field">주요 진료분야: 고양이내과,종양내과, <br/>
+                      일반내과, 중증내과질환</p>  
+            </div>
+             <div class="swiper-slide">
+              <img src="./imge/의사/박민주 진료수의사.png">
+              <p id="name">박민주 진료수의사</p>
+              <p id="field">주요 진료분야: 고양이내과,종양내과, <br/>
+                      일반내과, 중증내과질환</p>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./imge/의사/신효원 진료수의사.png">
+              <p id="name">신효원 진료수의사</p>
+              <p id="field">주요 진료분야: 일반내과, 일반외과</p>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./imge/의사/장김웅진 외과과.png">
+              <p id="name">김웅진 외과과장</p>
+              <p id="field">주요 진료분야: 일반외과, 정형외과</p>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./imge/의사/장이통일 대표원.png">
+              <p id="name">이통일 대표원장</p>
+              <p id="field">주요 진료분야: 일반내과, 특수동물</p>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./imge/의사/장진웅 치과의사.png">
+              <p id="name">이통일 대표원장</p>
+              <p id="field">주요 진료분야: 치과</p>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./imge/의사/최호규 응급의학학장.png">
+              <p id="name">최호규 응급의학과장</p>
+              <p id="field">주요 진료분야: 야간응급진료</p>  
+            </div>
+          </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>  
+    </section>
+    <!-- 종합의류센터 둘러보기 -->
+    <section>
+        <div class="inner">
+          <div id="Image">
+            <img src="./imge/내부.jpg"> 
+          </div>
+          <div id="Inner">
+            <p id="TOUR">BP ANIMAL TOUR</p>
+            <P id="general">부평종합동물의료센터</P>
+            <p id="see">둘러보기<br/></p>  
+            <p id="special">반려동물과 반려인을 위한 우리들만의 특별하고 차별화된 공간,<br/>
+                            진단검사부터 수술, 입원까지 가능한 규모,<br/>
+                            우리들은 호텔급 병원 인테리어와 컨시어지를 제공합니다.
+            </p>
+            <div class="Lean_more">
+              <p id="Lean_more">자세히보기</p>  
+            </div>
+          </div>
+        </div>  
+    </section>
+    <section>
+      <!-- Notice -->
+      <div class="notice">
+        <div id="notice">
+          <p id="TOUR">BP ANIMAL NOTICE</p>
+          <p id="delivery">공지사항을 전합니다.<br/></p>
+          <div class="post">
+            <div class="sign">
+              <img src="./imge/공지사항/공지사항.jpg">
+              <p id="alliance"> 
+                부평종합동물의료센터와 연합동물영상센터 영상진단 <br/>
+                <span id="diagnosis">MOU 체결</span>                  
+              </p>
+              <span id="date">2024-01-21</span>  
+            </div>
+            <div class="remodeling">
+              <img src="./imge/공지사항/공지사항.jpg">
+              <p id="normality">[부평종합동물의료센터]내부 리모델링 일정 및 정상 진료 <br/>
+                                  <span id="guide">안내</span>                  
+              </p>
+              <span id="date">2024-01-21</span>  
+            </div>
+            <div class="homepage">
+              <div id="homepage">
+                <img src="./imge/logo.png">
+              </div>
+              <p id="complete">[부평종합동물의료센터]홈페이지가 제작이 완료 <br/>
+                                  <span id="do">되었습니다</span>                  
+              </p>
+              <span id="date">2024-01-21</span>  
+            </div>
+          <div id="example">더보기</div>
+      </div>
+  </section>
+  <section>
+    <!-- 피드 -->
+    <div class="feed">
+      <div id="feed">
+        <p id="TOUR">BP ANIMAL INSTAGRAM</p>
+        <p id="delivery">인스타그램에서 최신 피드를 확인하세요.<br/></p>
+        <div class="image">
+          <div class="schedule">
+            <img src="./imge/인스타그램 피드/수의사 근무표.jpg">
+          </div>
+          <div class="blackdog">
+            <img src="./imge/인스타그램 피드/귀가 새까만 강아지.jpg">
+          </div>
+          <div class="Shih_Tzu">
+            <img src="./imge/인스타그램 피드/시츄.jpg">  
+          </div>
+          <div class="cats">
+            <img src="./imge/인스타그램 피드/고양이.jpg">  
+          </div>
+
+          <div class="explain">
+            <p id="Hello">안녕하세요. 부평종합동물의료센터입니다.<br/>
+                전문적인 치과진료로 찾아뵌지 곧 1년이 됩니다.<br/>
+                많은 관심과 문의에 정말 감사드립니다.<br/>
+                앞으로도 좋은 진료 전해드리도록 노력하겠습니다.
+            <p id="reservation">2024년 6월 현 공지 기재일로부터 부득이하게 <br/>
+              치과진료예약금이 생기게되었습니다.<br/>
+               신경치료 및 전문치과수술은 많은 시간이 들어가는 <br/> 진료인만큼
+               예약을 꼭 해주셔야 원할한 진료가 가능합니다.<br/>
+               더욱 많은 아이들에게 진료 기회가 돌아갈 수 있도록<br/> 
+               너그러운 마음으로 양해 부탁드립니다.<br/>
+               감사합니다.
+            </p>    
+            </p>  
+          </div>
+          <div class="Maltese">
+            <img src="./imge/인스타그램 피드/말티즈.jpg">  
+          </div>
+        <div id="see_more">더보기</div>
+    </div>
+  </section>
+  <!-- 위치 -->
+  <section>
+    <div class="direction">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1172305746295!2d126.71914357640358!3d37.5051531276447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7db4692aa023%3A0xded162f6f0369e33!2z67aA7Y-J7KKF7ZWp64-Z66y867OR7JuQ!5e0!3m2!1sko!2skr!4v1719546973221!5m2!1sko!2skr"
+        width="960" height="550" allowfullscreen="none" loading="lazy"></iframe>
+      </div>
+      <div id="direction">
+        <p id="position">DIRECTION</p>
+        <P id="inchen">인천 부평구 부평대로 138,<br>2층
+        <p id="Bupyeong">(부평동, 부평 신일유스테이션),</P>
+        </P>
+        <p id="appointment">RESERVATION</p>
+        <P id="telephone">032-511-6836</P>
+        <P id="week">주간진료 09:00 - 21:00</P>
+        <P id="night">야간진료 21:00 - 09:00 (연중 무휴 365일 근무)</P>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <div class="footer">
+        <div id="footer_logo">
+          <img src="./imge/footer_logo.png">  
+        </div>
+      <div class="info">
+        <p id="business_name">상호명: 부평종합동물의료센터</p>
+        <p id="representative">대표자: 박정순,정범수,이통일:778-15-00484</p>
+        <p id="site">소재지: 인천부평구부평대로138,210호(부평동, 부평 신일유스테이션)</p>
+        <p id="cellphone">연락쳐: 032-511-6836 이메일: bpanimal@naver.com</p>
+      </div>
+      <hr id="footer_hr">
+      <div class="copyright">
+        <p id="copyright">Copyright@24시부평종합동물의료센터All rights reserved.</p>
+        <p id="terms">이용약관 | 개인정보처리방침</p>
+      </div>
+      </div>
+  </footer>
+        <!-- 스와이퍼-->
+        <script>
+        var mySwiper = new Swiper(".mySwiper", {
+    slidesPerView: 5, // 한 번에 표시할 슬라이드 수
+    spaceBetween: 20, // 슬라이드 간의 간격  
+    loop: true, // 슬라이드 루프(무한 회전) 활성화
+    navigation: {
+      nextEl: ".swiper-button-next", 
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: '.swiper-pagination', // 페이지 표시기
+      clickable: true // 페이지 번호 클릭 가능하게 설정
+    },  
+    autoplay: {
+      delay: 3000, // 3초마다 자동 재생
+      disableOnInteraction: false // 사용자 상호 작용 후에도 자동 재생 유지
+    },  
+    mousewheel: true, // 마우스 휠로 슬라이드 이동 가능
+    centeredSlides: true, // 슬라이드 중앙 정렬  
+  });
+        </script>
+</div>        
+</body>
+</html>

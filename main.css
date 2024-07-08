@@ -1,0 +1,1018 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;    
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.nav {
+   width: 1920px;
+   height: 100px;
+   position: fixed;
+   background-color: white;
+   border-bottom: 1px solid lightgray;
+   z-index: 1000;
+   margin-top: -20px;
+} 
+li {
+    list-style-type: none;
+}
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+}
+.menu li { 
+    margin-right:0px;
+}
+.menu{ 
+    width: 1920px;
+    font-size: 18px;
+    padding-left: 680px;
+    margin-top: -65px;
+    word-spacing: 50px;
+    margin-left: 40px;
+    top: 50%;
+    font-weight: bold;
+    color: #2b2b2b; 
+}
+.Topmunu :hover {
+    color: #007bff;
+    cursor: pointer;
+}
+.subMenu { 
+    display: none;
+    padding-top: 28px;
+    line-height: 50px;
+    font-size: 15px;   
+}
+#staff,#medical_equipment,#organizational,#browse,#road {
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid rgb(241, 241, 241);
+    background-color: white;
+    color: #2b2b2b;
+    margin-left: -45px;
+}
+#staff:hover,#medical_equipment:hover,#organizational:hover,#browse:hover,#road:hover{
+    background-color:#007bff;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+#Cardiovascular_Center,#dentist_center,#Oncology_Center{
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid rgb(241, 241, 241);
+    background-color: white;
+    color: #2b2b2b;
+    margin-left: -36px;
+}
+#Cardiovascular_Center:hover,#dentist_center:hover,#Oncology_Center:hover{
+    background-color:#007bff;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+#Cardiovascular_Center,#dentist_center,#Oncology_Center{
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid rgb(241, 241, 241);
+    background-color: white;
+    color: #2b2b2b;
+}
+#Cardiovascular_Center:hover,#dentist_center:hover,#Oncology_Center:hover{
+    background-color:#007bff;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+#cat_center{
+    margin-left: 33px;
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid rgb(241, 241, 241);
+    background-color: white;
+    color: #2b2b2b;
+    margin-left: -10px;
+}
+#cat_center:hover{
+    background-color:#007bff;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+#announcement,#insta{
+    margin-left: 5px;
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid rgb(241, 241, 241);
+    background-color: white;
+    color: #2b2b2b;
+    margin-left: -35px;
+}
+#announcement:hover,#insta:hover {
+    background-color:#007bff;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.menu>ul>li:hover .subMenu{
+    display: block;    
+}
+/* Quickmenu */
+#quick {
+    position: relative;
+    position: fixed;
+    left: 50%;
+    z-index: 50;
+    margin-top: 550px;
+    padding-left:820px;
+    line-height: 40px;
+    display: inline;
+}
+#quick:hover {
+    cursor:pointer;
+}
+/* introduce */
+#video{
+    width:1920px;
+    height:700px;
+    margin-top: -880px;
+}
+/* swiper */
+html,
+    body {
+      position: relative;
+      height: 700px;
+      width: 1920px;
+    }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* 키워드 */
+.keyword {
+    background-color: #333;
+    overflow: hidden;
+    height:150px;
+}
+.keyword-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.keyword-menu {
+    margin: 0;
+}
+.keyword-menu a {
+    height: 100px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.location{
+    margin-top: -250px;
+}
+/* 반련동물 건강케어 */
+.care{
+    width: 1920px;
+    height: 300px;
+    margin-top:173px;        
+}
+#bg{
+    background-color: black;
+    opacity: 1;
+    position: relative;
+    filter: brightness(45%);
+    margin-top: 85px;
+}
+#bg> .nav{
+    position: absolute;
+}
+#introduce{
+    margin-top: 25px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;    
+}
+#care{
+    position: absolute;
+    color: black;
+    margin-top: -750px;
+    font-size: 40px;
+    color: white;
+    line-height: 60px;
+    background-blend-mode: multiply;
+}
+#hospital{
+    font-weight: bolder;
+    color: white;
+    font-size: 45px;
+}
+#care{
+    margin-top: -430px;
+    color:white;
+    position: relative;
+    text-align: center;
+}
+.he
+/* 내원고객수 */ 
+section { 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100vh; 
+}
+.num-sec {
+    position: relative; 
+    margin-top: 250px;  
+}
+.txt-box {
+    display: inline-block;
+    margin-top: 165px;
+    line-height: 80px;
+    color: white;
+}
+.txt{
+    text-align: center;
+    margin-top: -470px;
+}
+.count {
+    color: lightblue;
+    font-size: 60px;
+    font-weight: 900;
+}
+hr{
+    width: 300px;
+}
+section { 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100vh; 
+}
+.num-sec { 
+position: relative;
+margin-top: 250px;
+}
+.txt-box {
+    display: inline-block;
+    margin-top: 270px;
+    line-height: 80px;
+    text-align: center;
+    color: black;
+    padding-left: 100px;
+}
+.count {
+    color: lightblue;
+    font-size: 60px;
+    font-weight: 900;
+}
+#number{
+    color: white;
+    font-weight: bold;
+}
+hr{
+    width: 300px;
+    margin-left:0px;
+}
+#customer,#cure,#period{
+    color: white;
+}
+/* 특화진료센터*/
+.specialisation{
+    text-align: center;
+    margin-top: 470px;
+    position: relative;
+    line-height: 50px;
+}
+#H24{
+    color:#006ADB;
+    word-spacing: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 80px;
+    }
+#center{
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333;
+    line-height: 50px;
+    }
+#specialisation{
+    font-weight: bolder;
+    line-height: 70px;
+}
+#equipment{
+    margin-top: 10px;
+    color: rgb(88, 88, 88);
+    line-height: 30px;
+    font-size: 15px;
+    }
+/* 센터 */
+.center{
+    margin-top: 500px;
+    font-weight: bolder;
+    padding-left: 390px;
+}
+/* 심장순환기센터 */
+.heart{
+    /* 670 */
+    padding-right:750px;
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    border-radius:50px;
+    margin-top: 0px;
+    
+}
+.heart:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#heart{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}    
+/* 치과센터 */
+.dentist{
+    margin-top: -470px;
+    /* 50px */
+    margin-left:405px;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    border-radius:50px;
+}
+.dentist:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#dentist{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* 종양항암센터 */
+.tumor{
+    margin-top: -470px;
+    /* 50px */
+    margin-left:810px;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    border-radius:50px;
+}
+.tumor:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#tumor{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* 슬개골탈골센터 */
+.bone{
+    margin-top:40px;
+    /* 50px */
+    margin-left:390px;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    border-radius:50px;
+}
+.bone:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#bone{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+/* 응급의료센터 */
+.emergency{
+    margin-top:-470px;
+    /* 50px */
+    margin-left:800px;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    border-radius:50px;
+}
+.emergency:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#emergency{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+/* 고양이진료센터 */
+.cat{
+    margin-top:-470px;
+    /* 50px */
+    margin-left:1205px;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    border-radius:50px;
+}
+.cat:hover{
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#cat{
+    position: absolute;
+    margin-top: -85px;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+/* 의료진소개 */
+.doctor{
+    text-align: center;
+    /* 80 */
+    margin-top: 130px;
+    position: relative;
+    line-height: 40px;
+}
+#doctor{
+    color:#006ADB;
+    word-spacing: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    }
+#medical{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #333;
+    font-weight: 900;
+}
+#prepare{
+    color: rgb(88, 88, 88);
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+html, body {
+    position: relative;
+    height: 100%;
+    }
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper {
+    width: 1650px;
+    height: 700px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+.swiper-slide img {
+    display: inline;
+    width: 317px;
+    height: 415px;
+    object-fit: cover;
+}
+#name{
+    text-align: left;
+    color: #000000;
+    font-weight: bolder;
+    margin-top: 30px;
+    font-size: 18px;
+}
+#field{
+    text-align: left;
+    margin-top:8px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #9c9c9c;
+    font-weight: bold;
+}
+/* 둘러보기 */
+#Image{
+    margin-top:0px;
+    height: 750px;
+    /* overflow: hidden; */
+}
+.Inner {
+    margin-top: -555px;
+    width: 1350px;
+    height: 600px;
+    position: absolute;
+}
+#Inner{
+    width:1250px;
+    height:600px;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255,0.6);
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-600px;
+}
+#TOUR{
+    color:#006ADB;
+    word-spacing: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 135px;
+}
+#general{
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+}
+#see{
+    font-weight: bolder;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+#special{
+    margin-top: 10px;
+    color: rgb(88, 88, 88);
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+.center{
+    font-weight: bolder;
+    padding-left: 390px;
+}
+.Lean_more{
+    margin-top:50px;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 135px;
+    height: 50px;
+    background-color: #006ADB;
+    padding-top: 17px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Lean_more:hover{
+    background-color: #007bff;
+    color: white; 
+    cursor: pointer;
+    transition: all 2s; 
+}
+/* 공지사항 */
+#notice{
+    margin-top: -110px;
+    text-align: center;
+    border-radius: 30px;
+    isolation: isolate; 
+    position: relative;
+}
+#TOUR{
+    color:#006ADB;
+    word-spacing: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 135px;
+}
+#general{
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+}
+#delivery{
+    font-weight: bolder;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+#special{
+    margin-top: 10px;
+    color: rgb(88, 88, 88);
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+.center{
+    font-weight: bolder;
+    padding-left: 390px;
+}
+#button{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 135px;
+    height: 50px;
+    background-color: #006ADB;
+    padding-top: 17px;
+    border-radius: 30px;
+    color: white;
+    position: center;
+    margin-left: 607px;    
+}
+#button:hover{
+    background-color: #007bff;
+    color: white; 
+    cursor: pointer;
+    transition: all 2s; 
+}
+.post{
+    margin-top: 70px;
+    left: 50%;
+}
+.sign{
+    margin-right: 855px;
+    font-size: 15px;
+    font-weight: bold;    
+}
+.homepage{
+    margin-top: -508px;
+    margin-left: 1191px;
+    width: 394px;
+    height: 395px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+#homepage{
+    margin-top: 150px;
+    margin-left: 12px;
+    transform: scale(1.5);
+}
+#alliance{
+    margin-top: 20px;
+    margin-right: 38px;
+    line-height: 25px;
+}
+#diagnosis{
+    margin-right: 280px;
+}
+#date{
+    line-height: 40px;
+    margin-right: 325px;
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    font-weight:900;
+}
+#sign{
+    margin-right: 925px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: -500px;
+    line-height: 40px;
+}
+#complete{
+    line-height: 25px;
+    color: #000000;
+    font-weight: bolder;
+    margin-top: 160px;
+    margin-right: 70px;
+    font-size: 15px;
+}
+#do{
+    margin-left: -250px;
+}
+.remodeling{
+    margin-top: -510px;                   
+    margin-left: 0 auto;
+    
+
+}
+#alliance{
+    margin-top: 20px;
+    margin-right: 38px;
+    line-height: 25px;
+}
+#diagnosis{
+    margin-right: 280px;
+}
+#sign{
+    margin-right: 925px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -500px;
+}
+#normality{
+    margin-top: 20px;
+    line-height: 25px;
+    margin-right:10px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#guide{
+    margin-right:355px;
+}
+#example{
+    margin-top: 180px;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 90px;
+    height: 45px;
+    background-color: #006ADB;
+    padding-top: 13px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;   
+}
+#example:hover{
+    background-color: #007bff;
+    cursor: pointer;
+    transition: all 2s;
+     
+}
+/* 인스타그램 피드 */
+.feed{
+    margin-top: -50px;
+}
+.schedule{
+    margin-left:335px;
+    margin-top: 50px;
+}
+.schedule:hover{
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+.blackdog{
+    text-align: center;
+    margin-top:-413px;
+}
+.blackdog:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+    
+}
+.Shih_Tzu{
+    margin-left: 1173px;
+    margin-top:-420px;
+}
+.Shih_Tzu:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 1s;
+}
+.explain{
+    margin-left:760px;
+    margin-top:-410px;
+    width: 409px;
+    height: 413px;
+    border: 1px solid lightgray;
+    border-radius:30px;
+    color: #2b2b2b;    
+}
+.explain:hover{
+    cursor: pointer;
+    border-radius:30px;
+    background-color: lightgray;
+    font-weight: bolder;
+    transition: 1s;
+    color: #5f5f5f;
+}
+#Hello{
+    margin-top: 75px;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 23px;
+    font-weight: bolder;
+    text-align: center;
+}
+#reservation{
+    margin-top: 30px;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 23px;
+    font-weight: bolder;
+    text-align: center;
+}
+.cats{
+    margin-top: 30px;
+    margin-left:335px;
+}
+.cats:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.Maltese{
+    margin-top: -420px;
+    margin-left:1181px;
+}
+.Maltese:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+#see_more{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 90px;
+    height: 45px;
+    background-color: #006ADB;
+    padding-top: 13px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 50%;   
+}
+#see_more:hover{
+    background-color: #007bff;
+    cursor: pointer;
+    transition: all 2s;
+     
+}
+/* 위치 */
+#map{
+    margin-top:400px;
+    margin-left: 0px;
+    width: 960px;
+    height: 500px;
+    border: solid none;    
+}
+#direction{
+    margin-top: -500px;
+    margin-left: 960px;
+    width: 960px;
+    height: 550px;
+    background-color:#006ADB;
+    
+}
+#position{
+    color: white;
+    font-size: 20px;
+    margin-left: 60px;
+    padding-top: 65px;
+    letter-spacing: 8px;
+}
+#inchen{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 57px;
+}
+#Bupyeong{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -35px;
+    margin-left: 125px;
+    color: white;
+}
+#appointment{
+    color: white;
+    font-size: 20px;
+    margin-left: 60px;
+    padding-top: 80px;
+    letter-spacing: 8px;
+}
+#telephone{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+#week{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 55px;
+    color: white;
+}
+#night{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 55px;
+    color: white;
+}
+/* footer */
+.footer{
+    width: 1920px;
+    height: 400px;
+    background-color: #333;
+    margin-top: -408px;
+}
+#footer_logo{
+    width:20px;
+    height:20px;
+    padding-top:-2800px;
+    display: block;
+    left: 50%;
+    top:50%;
+  transform:translate(3145%, -350%);
+}
+.info{
+    color: rgb(110, 110, 110);
+    line-height:25px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 150px;
+}
+#footer_hr{
+    margin: auto;
+    margin-top: 45px;
+    width: 1200px;
+    border: 1px solid #2b2b2b ;    
+}
+.copyright{
+    color: #5f5f5f;
+    margin-top: 25px;
+    margin-left:360px;
+    font-size: 13px;
+}
+#terms{
+    margin-top: -15px;
+    margin-left: 1030px;
+    font-size: 13px;
+}
+@media screen and (max-with:640px) {
+    #AllWrap{ width: 100%;}
+    #content p {
+      font-size: 2em;
+      background-color: blue;
+    }
+  }
+  @media screen and (max-with:1000px) {
+    #header{ width: 80%;}
+    #content p {
+      font-size: 1em;
+      color: green;
+    }
+  }
+  @media screen and (max-with:641px) and (max-width:999px) {
+    #header{ width: 100%;}
+    #content p {
+      font-size: 1em;
+      color: red;
+      background-color: black;
+    }
+  }
