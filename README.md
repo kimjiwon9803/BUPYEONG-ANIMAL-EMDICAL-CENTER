@@ -13,6 +13,7 @@
 <img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/5b6aeb4b-d396-4fa8-ad87-ea12b2a6bf80" width="300"/>
 
 ## 페이지
+<img src="https://github.com/kimjiwon9803/BUPYEONG-ANIMAL-EMDICAL-CENTER/assets/138649745/e1501b48-450e-481b-b03b-2e7ac130d9db"/>
 
 
 ## 주요기능
